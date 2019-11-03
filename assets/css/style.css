@@ -4,10 +4,14 @@
 * Copyright JDIH Kota Blitar
 */
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,300,500');
+@import url('https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap');
 
 body {
   font-family: Poppins, sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 #wrapper .header-mainbar {
@@ -40,28 +44,47 @@ body {
   width: auto;
 }
 
-.info-surat {
-  margin-top: auto;
+.myborder {
+  border: 2px solid #007bff;
+  width: 10ch;
+  margin-bottom: 20px
+}
+
+.content-wrapper {
+  margin-bottom: 1rem;
 }
 
 .footer-card {
   margin-top: 30px;
-  padding: 30px 0;
+  padding-top: 30px;
   border-top: 1px solid rgba(0, 0, 0, .05);
   color: #999999;
-  font-size: 1.2em;
 }
 
 .footer-card .footer-details {
   display: flex;
 }
 
-.footer-card .footer-details .surat-detail .tahun {
+.footer-card .footer-details .berita-detail .clicked {
   margin-right: 20px;
 }
 
-.footer-card .footer-details .surat-detail .nomor {
-  margin-right: 0 20px;
+.sidebar {
+  margin-bottom: 1rem;
+}
+
+.sidebar .widget .card-title {
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.sidebar .widget .widget-content .nav {
+  margin: 0 -7.5px;
+}
+
+.sidebar .widget .widget-content .nav li {
+  margin: 0 7.5px;
+  border-bottom: 1px solid #eee;
 }
 
 /** Bootstrap Edit */
@@ -101,6 +124,7 @@ body {
 }
 
 .card {
+  border: none;
   border-radius: 0;
-  box-shadow: 0 10px 30px rgba(0,0,0,.05);
+  box-shadow: 0 10px 30px rgba(0,0,0,.15);
 }
