@@ -1,0 +1,106 @@
+/**
+*
+* JDIH Kota Blitar Frontend Design - v.1.0
+* Copyright JDIH Kota Blitar
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,300,500');
+
+body {
+  font-family: Poppins, sans-serif;
+}
+
+#wrapper .header-mainbar {
+  padding: 30px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+  font-family: Poppins, sans-serif;
+}
+
+#wrapper .header-mainbar .title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#wrapper .header-mainbar .text-mainbar {
+  margin-left: 1rem;
+}
+
+#wrapper .header-mainbar h3 {
+  color: #eeeeee;
+}
+
+#wrapper .header-mainbar .logo {
+  width: 8em;
+  height: 8em;
+}
+
+.form-produk {
+  margin-top: 1rem;
+  width: auto;
+}
+
+.info-surat {
+  margin-top: auto;
+}
+
+.footer-card {
+  margin-top: 30px;
+  padding: 30px 0;
+  border-top: 1px solid rgba(0, 0, 0, .05);
+  color: #999999;
+  font-size: 1.2em;
+}
+
+.footer-card .footer-details {
+  display: flex;
+}
+
+.footer-card .footer-details .surat-detail .tahun {
+  margin-right: 20px;
+}
+
+.footer-card .footer-details .surat-detail .nomor {
+  margin-right: 0 20px;
+}
+
+/** Bootstrap Edit */
+.navbar-light .navbar-nav .nav-link {
+  color: #999999;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+  color: #34495e;
+  transition: .5s all;
+}
+
+.navbar-light .navbar-nav .nav-item {
+  margin-left: 10px;
+}
+
+.dropdown-menu {
+  border-radius: 0;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+.form-control:focus {
+  outline: 10px;
+  box-shadow: none;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.card {
+  border-radius: 0;
+  box-shadow: 0 10px 30px rgba(0,0,0,.05);
+}
