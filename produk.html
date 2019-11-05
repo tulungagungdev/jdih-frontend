@@ -1,0 +1,172 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JDIH Kota Blitar</title>
+
+    <!-- Styling -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/modules/css/all.min.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Header Start-->
+        <header id="header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#">JDIH Blitar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="produkDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Profile
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="produkDropdown">
+                                  <a class="dropdown-item" href="organisasi.html">Struktur Organisasi</a>
+                                  <a class="dropdown-item" href="#">Visi Misi</a>
+                                  <a class="dropdown-item" href="#">Tentang JDIH</a>
+                                </div>
+                              </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Berita</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="produk.html">Produk Hukum</a>
+                              </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-mainbar">
+                <div class="container d-flex">
+                    <img class="logo" src="assets/img/jdih-icon.png" alt="JDIH Kota Blitar">
+                    <div class="container">
+                        <div class="title text-mainbar">JDIH Kota Blitar</div>
+                        <p class="text-mainbar">Selamat datang di Jaringan Dokumentasi
+                            <br> Informasi Hukum Kota Blitar</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container form-produk">
+                <section class="main-page pt-50 pb-50">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-header card-title">
+                                        <h3 class="sub">Daftar Dokumen</h3> </div>
+                                    <div class="card-body">
+                                        <div class="row" style="padding-top:15px; padding-bottom:15px">
+                                            <div class="form-group col-md-4">
+                                                <select data-column="1" class="form-control search-input-text1">
+                                                    <option value="">- Pilih Peraturan -</option>
+                                                    <option value="PERDA">Peraturan Daerah</option>
+                                                    <option value="PERWALI">Peraturan Walikota</option>
+                                                    <option value="KEPWALI">Keputusan Walikota</option>
+                                                    <option value="INSWALI">Instruksi Walikota</option>
+                                                    <option value="PERSAMWALI">Peraturan Bersama Walikota</option>
+                                                    <option value="RANCPD">Rancangan Perda</option>
+                                                    <option value="PROLEGDA">PROPEMPERDA</option>
+                                                    <option value="NA">Naskah Akademik</option>
+                                                    <option value="TAPMPR">TAP MPR</option>
+                                                    <option value="UU">Undang-Undang</option>
+                                                    <option value="PERPUU">PERPUU</option>
+                                                    <option value="PP">Peraturan Pemerintah</option>
+                                                    <option value="PERPRES">Peraturan Presiden</option>
+                                                    <option value="KEPRES">Keputusan Presiden</option>
+                                                    <option value="INPRES">Instruksi Presiden</option>
+                                                    <option value="PERMENDAGRI">Permendagri</option>
+                                                    <option value="KEPMENDAGRI">Kepmendagri</option>
+                                                    <option value="PERMENTERI">Peraturan Menteri</option>
+                                                    <option value="INMENDAGRI">Instruksi Mendagri</option>
+                                                    <option value="PERPROP">Perda Prov Jatim</option>
+                                                    <option value="PERGUB">Peraturan Gubernur</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-2">
+                                                <input type="text" class="form-control" placeholder="Nomor">
+                                            </div>
+                                            <div class="form-group col-md-2">
+                                                <input type="text" class="form-control" placeholder="Tahun">
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <input type="text" class="form-control" placeholder="Judul">
+                                            </div>
+                                            <div class="col-md-1 mb-1">
+                                                <button class="btn btn-primary">Cari</button>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-sm-10">
+                                                    <table id="example" class="table table-striped dataTable no-footer" role="grid" aria-describedby="example_info" style="width: 1070px;">
+                                                        <tbody>
+                                                            <tr role="row" class="even">
+                                                                <td class="sorting_1">
+                                                                    <div class="media">
+                                                                        <div class="media-body">
+                                                                            <div class="small" style="color:grey"><i class="fa fa-user"></i> Administrator &nbsp; <i class="fa fa-calendar"> </i>
+                                                                                  
+                                                                                &nbsp;Tahun : 2018 &nbsp;&nbsp; No. Peraturan: 30 &nbsp; &nbsp;<i class="fas fa-eye"></i><span class="meta-title ml-1"> 100</span>
+                                                                            </div>
+                                                                            <div>
+                                                                                <h5 class="media-heading"><a href="#" class="news-title" target="_blank">Perubahan Kedua Atas Peraturan Daerah No. 9 Tahun 2011 Tentang Retribusi Jasa Usaha</a></h5>
+                                                                            </div>
+                                                                            <div class="small" style="color:grey">Tipe Dok : Peraturan Perundang-Undangan
+                                                                                <br>Kategori : Peraturan Walikota
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <div id="example_processing" class="dataTables_processing card" style="display: none;">Processing...</div>
+                                                </div>
+                                            </div>
+                                            <div class="container">
+                                                <div class="text-center">
+                                                    <div class="dataTables_paginate paging_simple_numbers" id="example_paginate">
+                                                        <ul class="pagination">
+                                                            <li class="paginate_button page-item previous disabled" id="example_previous"><a href="#" aria-controls="example" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li>
+                                                            <li class="paginate_button page-item active"><a href="#" aria-controls="example" data-dt-idx="1" tabindex="0" class="page-link">1</a></li>
+                                                            <li class="paginate_button page-item "><a href="#" aria-controls="example" data-dt-idx="2" tabindex="0" class="page-link">2</a></li>
+                                                            <li class="paginate_button page-item "><a href="#" aria-controls="example" data-dt-idx="3" tabindex="0" class="page-link">3</a></li>
+                                                            <li class="paginate_button page-item "><a href="#" aria-controls="example" data-dt-idx="4" tabindex="0" class="page-link">4</a></li>
+                                                            <li class="paginate_button page-item "><a href="#" aria-controls="example" data-dt-idx="5" tabindex="0" class="page-link">5</a></li>
+                                                            <li class="paginate_button page-item disabled" id="example_ellipsis"><a href="#" aria-controls="example" data-dt-idx="6" tabindex="0" class="page-link">…</a></li>
+                                                            <li class="paginate_button page-item "><a href="#" aria-controls="example" data-dt-idx="7" tabindex="0" class="page-link">18</a></li>
+                                                            <li class="paginate_button page-item next" id="example_next"><a href="#" aria-controls="example" data-dt-idx="8" tabindex="0" class="page-link">Next</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+    </div>
+    </section>
+    <br>
+    </div>
+    </header>
+    <!-- Content End -->
+
+    <!-- Scripting -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>

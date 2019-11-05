@@ -18,115 +18,161 @@
         <div class="container">
           <a class="navbar-brand" href="#">JDIH Blitar</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <i class="fas fa-bars"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
               <li class="nav-item">
                 <a class="nav-link" href="#">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Organisasi</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="produkDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Profile
+                </a>
+                <div class="dropdown-menu" aria-labelledby="produkDropdown">
+                  <a class="dropdown-item" href="organisasi.html">Struktur Organisasi</a>
+                  <a class="dropdown-item" href="#">Visi Misi</a>
+                  <a class="dropdown-item" href="#">Tentang JDIH</a>
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Berita</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="produkDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Produk
-                </a>
-                <div class="dropdown-menu" aria-labelledby="produkDropdown">
-                  <a class="dropdown-item" href="#">Peraturan Daerah</a>
-                  <a class="dropdown-item" href="#">Peraturan Walikota</a>
-                  <a class="dropdown-item" href="#">Keputusan Walikota</a>
-                </div>
+              <li class="nav-item">
+                <a class="nav-link" href="produk.html">Produk Hukum</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
       <div class="header-mainbar">
-        <div class="container d-flex">
-          <img class="logo" src="assets/img/jdih-icon.png" alt="JDIH Kota Blitar">
-          <div class="container">
-            <div class="title text-mainbar">JDIH Kota Blitar</div>
-            <p class="text-mainbar">Selamat datang di Jaringan Dokumentasi<br> Informasi Hukum Kota Blitar</p>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2">
+              <img class="logo" src="assets/img/jdih-icon.png" alt="JDIH Kota Blitar">
+            </div>
+            <div class="col-md-10">
+              <div class="title text-mainbar">JDIH Kota Blitar</div>
+              <p class="text-mainbar">Selamat datang di Jaringan Dokumentasi<br> Informasi Hukum Kota Blitar</p>
+            </div>
           </div>
         </div>
       </div>
       <div class="container form-produk">
-        <form class="d-flex" action="#">
-          <div class="row ">
-            <div class="col-md-3 mb-2">
-              <input type="text" class="form-control" placeholder="Nomor">
-            </div>
-            <div class="col-md-3 mb-2">
-              <input type="text" class="form-control" placeholder="Tahun">
-            </div>
-            <div class="col-md-5 mb-2">
-              <input type="text" class="form-control" placeholder="Tentang">
-            </div>
-            <div class="col-md-1 mb-1">
-              <button class="btn btn-primary">Cari</button>
-            </div>
+        <section class="main-page pt-20 pb-50">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12">
+                      <div class="card">
+                          <div class="card-header card-title">
+                            <h3 class="sub">Pencarian Dokumen</h3> </div>
+                            <div class="card-body">
+                                <div class="row" style="padding-top:15px; padding-bottom:15px">
+                                    <div class="form-group col-md-4">
+                                        <select data-column="1" class="form-control search-input-text1">
+                                            <option value="">- Pilih Peraturan -</option>
+                                            <option value="PERDA">Peraturan Daerah</option>
+                                            <option value="PERWALI">Peraturan Walikota</option>
+                                            <option value="KEPWALI">Keputusan Walikota</option>
+                                            <option value="INSWALI">Instruksi Walikota</option>
+                                            <option value="PERSAMWALI">Peraturan Bersama Walikota</option>
+                                            <option value="RANCPD">Rancangan Perda</option>
+                                            <option value="PROLEGDA">PROPEMPERDA</option>
+                                            <option value="NA">Naskah Akademik</option>
+                                            <option value="TAPMPR">TAP MPR</option>
+                                            <option value="UU">Undang-Undang</option>
+                                            <option value="PERPUU">PERPUU</option>
+                                            <option value="PP">Peraturan Pemerintah</option>
+                                            <option value="PERPRES">Peraturan Presiden</option>
+                                            <option value="KEPRES">Keputusan Presiden</option>
+                                            <option value="INPRES">Instruksi Presiden</option>
+                                            <option value="PERMENDAGRI">Permendagri</option>
+                                            <option value="KEPMENDAGRI">Kepmendagri</option>
+                                            <option value="PERMENTERI">Peraturan Menteri</option>
+                                            <option value="INMENDAGRI">Instruksi Mendagri</option>
+                                            <option value="PERPROP">Perda Prov Jatim</option>
+                                            <option value="PERGUB">Peraturan Gubernur</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <input type="text" class="form-control" placeholder="Nomor">
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <input type="text" class="form-control" placeholder="Tahun">
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <input type="text" class="form-control" placeholder="Tentang">
+                                    </div>
+                                    <div class="col-md-1 mb-1">
+                                        <button class="btn btn-primary">Cari</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
           </div>
-        </form>
+      </section><br>
       </div>
     </header>
     <!-- Header End -->
 
     <!-- Content Start -->
-    <div class="container">
-      <h3>Berita Terbaru</h3>
-      <div class="myborder"></div>
-      <div class="row">
-        <div class="col-md-8">
-          <div class="content-wrapper">
-            <div class="card mb-3">
-              <img src="https://dummyimage.com/1200x600/000/fff" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h4 class="card-title">Launcing Aplikasi JDIH, Ciptakan Warga Lebih Sadar Hukum</h4>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <div class="footer-card">
-                  <div class="footer-details">
-                    <a href="#" class="btn btn-primary">Selengkapnya</a>
-                    <div class="berita-detail ml-auto d-flex">
-                      <div class="clicked">
-                        <span class="text-success">Clicked : </span><span class="meta-title">100</span>
+    <section id="content">
+      <div class="container">
+        <h3>Berita Terbaru</h3>
+        <div class="myborder"></div>
+        <div class="row">
+          <div class="col-md-8">
+            <div class="content-wrapper">
+              <div class="card mb-3">
+                <img src="https://dummyimage.com/1200x600/000/fff" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title">Launcing Aplikasi JDIH, Ciptakan Warga Lebih Sadar Hukum</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="footer-card">
+                    <div class="footer-details">
+                      <a href="#" class="btn btn-primary">Selengkapnya</a>
+                      <div class="berita-detail ml-auto d-flex">
+                        <div class="clicked">
+                          <i class="fas fa-eye"></i> 100
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="card mb-3">
-              <img src="https://dummyimage.com/1200x600/000/fff" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h4 class="card-title">Launcing Aplikasi JDIH, Ciptakan Warga Lebih Sadar Hukum</h4>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <div class="footer-card">
-                  <div class="footer-details">
-                    <a href="#" class="btn btn-primary">Selengkapnya</a>
-                    <div class="berita-detail ml-auto d-flex">
-                      <div class="clicked">
-                        <span class="text-success">Clicked : </span><span class="meta-title">100</span>
+              <div class="card mb-3">
+                <img src="https://dummyimage.com/1200x600/000/fff" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title">Launcing Aplikasi JDIH, Ciptakan Warga Lebih Sadar Hukum</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="footer-card">
+                    <div class="footer-details">
+                      <a href="#" class="btn btn-primary">Selengkapnya</a>
+                      <div class="berita-detail ml-auto d-flex">
+                        <div class="clicked">
+                          <i class="fas fa-eye"></i> 100
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="card mb-3">
-              <img src="https://dummyimage.com/1200x600/000/fff" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h4 class="card-title">Launcing Aplikasi JDIH, Ciptakan Warga Lebih Sadar Hukum</h4>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <div class="footer-card">
-                  <div class="footer-details">
-                    <a href="#" class="btn btn-primary">Selengkapnya</a>
-                    <div class="berita-detail ml-auto d-flex">
-                      <div class="clicked">
-                        <span class="text-success">Clicked : </span><span class="meta-title">100</span>
+              <div class="card mb-3">
+                <img src="https://dummyimage.com/1200x600/000/fff" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title">Launcing Aplikasi JDIH, Ciptakan Warga Lebih Sadar Hukum</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="footer-card">
+                    <div class="footer-details">
+                      <a href="#" class="btn btn-primary">Selengkapnya</a>
+                      <div class="berita-detail ml-auto d-flex">
+                        <div class="clicked">
+                          <i class="fas fa-eye"></i> 100
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -134,69 +180,70 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="sidebar">
-            <div class="card widget widget-1">
-              <div class="card-body">
-                <h3 class="card-title">Produk Hukum</h3>
-                <div class="widget-content">
-                  <ul class="nav">
-                    <li>
-                      <div class="p-3">
-                        <ul class="nav">
-                          <li>
-                            <i class="fas fa-eye"></i><span class="meta-title ml-1">100</span>
-                          </li>
-                          <li>
-                            <i class="fas fa-eye"></i><span class="meta-title ml-1">100</span>
-                          </li>
-                        </ul>
-                        <div>
-                          <a href="#">Perubahan Kedua Atas Peraturan Daerah No. 9 Tahun 2011 Tentang Retribusi Jasa Usaha</a href="#">
+          <div class="col-md-4">
+            <div class="sidebar">
+              <div class="card widget widget-1">
+                <div class="card-body">
+                  <h3 class="card-title">Produk Hukum</h3>
+                  <div class="widget-content">
+                    <ul class="nav">
+                      <li>
+                        <div class="p-3">
+                          <ul class="nav">
+                            <li>
+                              <i class="fas fa-eye"></i><span class="meta-title ml-1">100</span>
+                            </li>
+                            <li>
+                              <i class="fas fa-eye"></i><span class="meta-title ml-1">100</span>
+                            </li>
+                          </ul>
+                          <div>
+                            <a href="#">Perubahan Kedua Atas Peraturan Daerah No. 9 Tahun 2011 Tentang Retribusi Jasa Usaha</a href="#">
+                          </div>
                         </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="p-3">
-                        <ul class="nav">
-                          <li>
-                            <i class="fas fa-eye"></i><span class="meta-title ml-1">100</span>
-                          </li>
-                          <li>
-                            <i class="fas fa-eye"></i><span class="meta-title ml-1">100</span>
-                          </li>
-                        </ul>
-                        <div>
-                          <a href="#">Perubahan Kedua Atas Peraturan Daerah No. 9 Tahun 2011 Tentang Retribusi Jasa Usaha</a href="#">
+                      </li>
+                      <li>
+                        <div class="p-3">
+                          <ul class="nav">
+                            <li>
+                              <i class="fas fa-eye"></i><span class="meta-title ml-1">100</span>
+                            </li>
+                            <li>
+                              <i class="fas fa-eye"></i><span class="meta-title ml-1">100</span>
+                            </li>
+                          </ul>
+                          <div>
+                            <a href="#">Perubahan Kedua Atas Peraturan Daerah No. 9 Tahun 2011 Tentang Retribusi Jasa Usaha</a href="#">
+                          </div>
                         </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="p-3">
-                        <ul class="nav">
-                          <li>
-                            <i class="fas fa-eye"></i><span class="meta-title ml-1">100</span>
-                          </li>
-                          <li>
-                            <i class="fas fa-eye"></i><span class="meta-title ml-1">100</span>
-                          </li>
-                        </ul>
-                        <div>
-                          <a href="#">Perubahan Kedua Atas Peraturan Daerah No. 9 Tahun 2011 Tentang Retribusi Jasa Usaha</a href="#">
+                      </li>
+                      <li>
+                        <div class="p-3">
+                          <ul class="nav">
+                            <li>
+                              <i class="fas fa-eye"></i><span class="meta-title ml-1">100</span>
+                            </li>
+                            <li>
+                              <i class="fas fa-eye"></i><span class="meta-title ml-1">100</span>
+                            </li>
+                          </ul>
+                          <div>
+                            <a href="#">Perubahan Kedua Atas Peraturan Daerah No. 9 Tahun 2011 Tentang Retribusi Jasa Usaha</a href="#">
+                          </div>
                         </div>
-                      </div>
-                    </li>
-                  </ul>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <!-- Content End -->
+    
   </div>
-  <!-- Content End -->
 
   <!-- Scripting -->
   <script src="assets/js/jquery.min.js"></script>
